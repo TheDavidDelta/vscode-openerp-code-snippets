@@ -1,0 +1,41 @@
+{
+  "name": "openerp-code-snippets",
+  "displayName": "OpenERP Code Snippets",
+  "description": "Snippets for developing OpenERP modules with Python and XML",
+  "version": "1.0.0",
+  "license": "MIT",
+  "publisher": "TheDavidDelta",
+  "engines": {
+      "vscode": "^1.40.0"
+  },
+  "icon": "images/logo.png",
+  "galleryBanner": {
+      "theme": "light"
+  },
+  "categories": [
+      "Snippets"
+  ],
+  "keywords": [
+      "openerp",
+      "odoo",
+      "erp",
+      "crm",
+      "bi",
+      "snippets",
+      "python",
+      "xml"
+  ],
+  "repository": "https://github.com/TheDavidDelta/vscode-openerp-code-snippets",
+  "contributes": {
+    "snippets": [
+      {
+        "language": "python",
+        "path": "./snippets/python.json"
+      },
+      {
+        "language": "xml",
+        "path": "./snippets/xml.json"
+      }
+    ]
+  }
+}

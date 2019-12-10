@@ -1,0 +1,152 @@
+{
+    "openerp_manifest": {
+        "prefix": "oman",
+        "body": [
+            "{",
+            "\t'name': '$1',",
+            "\t'version': '${2:0.1}',",
+            "\t'description': \"\"\"$3\"\"\",",
+            "\t'author': '$4',",
+            "\t'category': '$5',",
+            "\t'website': '$6',",
+            "\t'license': '$7',",
+            "\t'depends': [",
+            "\t\t'${8:base}'",
+            "\t],",
+            "\t'init_xml': [ ],",
+            "\t'demo_xml': [ ],",
+            "\t'update_xml': [",
+            "\t\t'$1.xml'",
+            "\t],",
+            "\t'installable': ${9:True},",
+            "\t'active': ${10:False}",
+            "}$0"
+        ],
+        "description": "Create OpenERP manifest"
+    },
+    "openerp_imports": {
+        "prefix": "oimp",
+        "body": [
+            "from osv import osv, fields",
+            "\n$0"
+        ],
+        "description": "Import OpenERP dependencies"
+    },
+    "openerp_new_model": {
+        "prefix": "omod",
+        "body": [
+            "class ${1:module}(osv.osv):",
+            "\t\"\"\"$2\"\"\"",
+            "\t_name = '${1/_/./g}'",
+            "\t_columns = {",
+            "\t\t$0",
+            "\t}",
+            "$1()"
+        ],
+        "description": "Create new OpenERP model"
+    },
+    "openerp_field_binary": {
+        "prefix": "ofbin",
+        "body": [
+            "'${1:new_field}': fields.binary('$2'),",
+            "$0"
+        ],
+        "description": "Add new field of type 'binary'"
+    },
+    "openerp_field_boolean": {
+        "prefix": "ofbool",
+        "body": [
+            "'${1:new_field}': fields.boolean('$2'),",
+            "$0"
+        ],
+        "description": "Add new field of type 'boolean'"
+    },
+    "openerp_field_char": {
+        "prefix": "ofchar",
+        "body": [
+            "'${1:new_field}': fields.char('$2', size=$3),",
+            "$0"
+        ],
+        "description": "Add new field of type 'char'"
+    },
+    "openerp_field_date": {
+        "prefix": "ofdate",
+        "body": [
+            "'${1:new_field}': fields.date('$2'),",
+            "$0"
+        ],
+        "description": "Add new field of type 'date'"
+    },
+    "openerp_field_datetime": {
+        "prefix": "oftime",
+        "body": [
+            "'${1:new_field}': fields.datetime('$2'),",
+            "$0"
+        ],
+        "description": "Add new field of type 'datetime'"
+    },
+    "openerp_field_float": {
+        "prefix": "offloat",
+        "body": [
+            "'${1:new_field}': fields.float('$2', digits=(${3:12}, ${4:2}),",
+            "$0"
+        ],
+        "description": "Add new field of type 'float'"
+    },
+    "openerp_field_integer": {
+        "prefix": "ofint",
+        "body": [
+            "'${1:new_field}': fields.integer('$2'),",
+            "$0"
+        ],
+        "description": "Add new field of type 'integer'"
+    },
+    "openerp_field_text": {
+        "prefix": "oftext",
+        "body": [
+            "'${1:new_field}': fields.text('$2'),",
+            "$0"
+        ],
+        "description": "Add new field of type 'text'"
+    },
+    "openerp_field_selection": {
+        "prefix": "ofsel",
+        "body": [
+            "'${1:new_field}': fields.selection([('${2:k}', '${3:v}'), ('${4:k}', '${5:v}')], '$6'),",
+            "$0"
+        ],
+        "description": "Add new field of type 'selection'"
+    },
+    "openerp_field_many2one": {
+        "prefix": "ofm2o",
+        "body": [
+            "'${1:new_field}': fields.many2one('${2:ref_class}', '$3'),",
+            "$0"
+        ],
+        "description": "Add new field of type 'many2one'"
+    },
+    "openerp_field_one2many": {
+        "prefix": "ofo2m",
+        "body": [
+            "'${1:new_field}': fields.one2many('${2:ref_class}', '${3:ref_field}', '$4'),",
+            "$0"
+        ],
+        "description": "Add new field of type 'one2many'"
+    },
+    "openerp_field_many2many": {
+        "prefix": "ofm2m",
+        "body": [
+            "'${1:new_field}': fields.many2many('${2:ref_class}', '${3:new_table}', '${4:own_fk}', '${5:other_fk}', '$6'),",
+            "$0"
+        ],
+        "description": "Add new field of type 'many2many'"
+    },
+    "openerp_field_related": {
+        "prefix": "ofrel",
+        "body": [
+            "'${1:new_field}': fields.related('${2:own_field}', '${3:foreign_field}', type='${4:many2one}', relation='${5:final_table}', string='$6'),",
+            "$0"
+        ],
+        "description": "Add new field of type 'related'"
+    }
+}

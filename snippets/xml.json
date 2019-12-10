@@ -1,0 +1,139 @@
+{
+    "openerp_form": {
+        "prefix": "oform",
+        "body": [
+            "<record id=\"view_${1:module}_form\" model=\"ir.ui.view\">",
+            "\t<field name=\"name\">${2/_/./g}.view.form</field>",
+            "\t<field name=\"model\">${2/_/./g}</field>",
+            "\t<field name=\"type\">form</field>",
+            "\t<field name=\"arch\" type=\"xml\">",
+            "\t\t<form string=\"${2/_/./g}\">",
+            "\t\t\t$0",
+            "\t\t</form>",
+            "\t</field>",
+            "</record>\n"
+        ],
+        "description": "Create OpenERP form view"
+    },
+    "openerp_tree": {
+        "prefix": "otree",
+        "body": [
+            "<record id=\"view_${1:module}_tree\" model=\"ir.ui.view\">",
+            "\t<field name=\"name\">${2/_/./g}.view.tree</field>",
+            "\t<field name=\"model\">${2/_/./g}</field>",
+            "\t<field name=\"type\">tree</field>",
+            "\t<field name=\"arch\" type=\"xml\">",
+            "\t\t<tree string=\"${2/_/./g}\">",
+            "\t\t\t$0",
+            "\t\t</tree>",
+            "\t</field>",
+            "</record>\n"
+        ],
+        "description": "Create OpenERP tree view"
+    },
+    "openerp_action": {
+        "prefix": "oact",
+        "body": [
+            "<record id=\"action_${2:package}_${2/(.+)/${1:/downcase}/}\" model=\"ir.actions.act_window\">",
+            "\t<field name=\"name\">${1:name}</field>",
+            "\t<field name=\"res_model\">${2/_/./g}.${2/(.+)/${1:/downcase}/}</field>",
+            "\t<field name=\"view_type\">form</field>",
+            "\t<field name=\"view_mode\">tree,form</field>",
+            "</record>",
+            "$0"
+        ],
+        "description": "Create new OpenERP action"
+    },
+    "openerp_menu_root": {
+        "prefix": "omenur",
+        "body": [
+            "<menuitem name=\"${1:name}\" id=\"menu_${2:package}_${2/(.+)/${1:/downcase}/}\"/>",
+            "\n$0"
+        ],
+        "description": "Create new OpenERP root menu"
+    },
+    "openerp_menu_item": {
+        "prefix": "omenui",
+        "body": [
+            "<menuitem name=\"${1:name}\" id=\"menu_${2:package}_${2/(.+)/${1:/downcase}/}\" action=\"action_$1_${2/(.+)/${1:/downcase}/}\" parent=\"menu_$1\"/>",
+            "$0"
+        ],
+        "description": "Create new OpenERP menu item"
+    },
+    "openerp_field": {
+        "prefix": "ofield",
+        "body": [
+            "<field name=\"$1\"/>",
+            "$0"
+        ],
+        "description": "Create OpenERP field"
+    },
+    "openerp_form_field": {
+        "prefix": "offield",
+        "body": [
+            "<field name=\"$1\" select=\"${2:0}\"/>",
+            "$0"
+        ],
+        "description": "Create OpenERP field with select"
+    },
+    "openerp_form_rel_field": {
+        "prefix": "offieldrel",
+        "body": [
+            "<field name=\"$1\" select=\"${2:0}\" colspan=\"${3:4}\"/>",
+            "$0"
+        ],
+        "description": "Create OpenERP field with select and colspan"
+    },
+    "openerp_data": {
+        "prefix": "odata",
+        "body": [
+            "<?xml version='1.0' encoding='utf-8'?>",
+            "<openerp>",
+            "\t<data>",
+            "\t\t$0",
+            "\t</data>",
+            "</openerp>"
+        ],
+        "description": "Create OpenERP initial structure"
+    },
+    "openerp_complete": {
+        "prefix": "ofull",
+        "body": [
+            "<?xml version='1.0' encoding='utf-8'?>",
+            "<openerp>",
+            "\t<data>",
+            "\t\t<menuitem name=\"${2:module}\" id=\"menu_${1:package}_${2/(.+)/${1:/downcase}/}\"/>\n",
+            "\t\t<record id=\"view_$1_${2/(.+)/${1:/downcase}/}_${3/(.+)/${1:/downcase}/}_form\" model=\"ir.ui.view\">",
+            "\t\t\t<field name=\"name\">$1.${2/(.+)/${1:/downcase}/}.${3/(.+)/${1:/downcase}/}.view.form</field>",
+            "\t\t\t<field name=\"model\">$1.${2/(.+)/${1:/downcase}/}.${3/(.+)/${1:/downcase}/}</field>",
+            "\t\t\t<field name=\"type\">form</field>",
+            "\t\t\t<field name=\"arch\" type=\"xml\">",
+            "\t\t\t\t<form string=\"$1.${2/(.+)/${1:/downcase}/}.${3/(.+)/${1:/downcase}/}\">",
+            "\t\t\t\t\t",
+            "\t\t\t\t</form>",
+            "\t\t\t</field>",
+            "\t\t</record>",
+            "\t\t<record id=\"view_$1_${2/(.+)/${1:/downcase}/}_${3/(.+)/${1:/downcase}/}_tree\" model=\"ir.ui.view\">",
+            "\t\t\t<field name=\"name\">$1.${2/(.+)/${1:/downcase}/}.${3/(.+)/${1:/downcase}/}.view.tree</field>",
+            "\t\t\t<field name=\"model\">$1.${2/(.+)/${1:/downcase}/}.${3/(.+)/${1:/downcase}/}</field>",
+            "\t\t\t<field name=\"type\">tree</field>",
+            "\t\t\t<field name=\"arch\" type=\"xml\">",
+            "\t\t\t\t<tree string=\"$1.${2/(.+)/${1:/downcase}/}.${3/(.+)/${1:/downcase}/}\">",
+            "\t\t\t\t\t",
+            "\t\t\t\t</tree>",
+            "\t\t\t</field>",
+            "\t\t</record>",
+            "\t\t<record id=\"action_$1_${2/(.+)/${1:/downcase}/}_${3/(.+)/${1:/downcase}/}\" model=\"ir.actions.act_window\">",
+            "\t\t\t<field name=\"name\">${3:class}</field>",
+            "\t\t\t<field name=\"res_model\">$1.${2/(.+)/${1:/downcase}/}.${3/(.+)/${1:/downcase}/}</field>",
+            "\t\t\t<field name=\"view_type\">form</field>",
+            "\t\t\t<field name=\"view_mode\">tree,form</field>",
+            "\t\t</record>",
+            "\t\t<menuitem name=\"$3\" id=\"menu_$1_${2/(.+)/${1:/downcase}/}_${3/(.+)/${1:/downcase}/}\" action=\"action_$1_${2/(.+)/${1:/downcase}/}_${3/(.+)/${1:/downcase}/}\" parent=\"menu_$1_${2/(.+)/${1:/downcase}/}\"/>",
+            "\t\t$0",
+            "\t</data>",
+            "</openerp>"
+        ],
+        "description": "Create OpenERP full XML structure"
+    }
+}
