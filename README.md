@@ -5,12 +5,12 @@
 [![Ratings](https://vsmarketplacebadge.apphb.com/rating/thedaviddelta.openerp-code-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=thedaviddelta.openerp-code-snippets)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
-#### 💻 Snippets for developing OpenERP modules with Python and XML
+#### 👨‍💻 Snippets for developing OpenERP modules with Python and XML
 
 > This extension is based on [Michell Stuttgart's Odoo Code Snippets](https://marketplace.visualstudio.com/items?itemName=mstuttgart.odoo-snippets)
 
 
-## Python Snippets
+## 🐍 Python Snippets
 
 | Snippet   | Description                       |
 |-----------|-----------------------------------|
@@ -32,20 +32,21 @@
 | `ofrel`   | Add new field of type 'related'   |
 
 
-## XML Snippets
+## 🗃️ XML Snippets
 
-| Snippet       | Description                                  |
-|---------------|----------------------------------------------|
-| `odata`       | Create OpenERP initial structure             |
-| `oform`       | Create OpenERP form view                     |
-| `otree`       | Create OpenERP tree view                     |
-| `oact`        | Create new OpenERP action                    |
-| `omenur`      | Create new OpenERP root menu                 |
-| `omenui`      | Create new OpenERP menu item                 |
-| `ofield`      | Create OpenERP field                         |
-| `offield`     | Create OpenERP field with select             |
-| `offieldrel`  | Create OpenERP field with select and colspan |
-| `ofull`       | Create OpenERP full XML structure            |
+| Snippet     | Description                           |
+|-------------|---------------------------------------|
+| `odata`     | Create OpenERP initial structure      |
+| `oform`     | Create new OpenERP form view          |
+| `otree`     | Create new OpenERP tree view          |
+| `oact`      | Create new OpenERP action             |
+| `omenur`    | Create new OpenERP root menu          |
+| `omenui`    | Create new OpenERP menu item          |
+| `ofield`    | Create new OpenERP field              |
+| `ofieldse`  | Create new OpenERP field with select  |
+| `ofieldrel` | Create new OpenERP field with colspan |
+| `omod`      | Create new OpenERP full model         |
+| `ofull`     | Create OpenERP full XML structure     |
 
 
 ## 📝 License
