@@ -9,7 +9,7 @@
             "\t'author': '${4:Unknown}',",
             "\t'category': '$5',",
             "\t'website': '$6',",
-            "\t'license': '${7:MIT}',",
+            "\t'license': '${7:GPL-3}',",
             "\t'depends': [",
             "\t\t'${8:base}'",
             "\t],",
@@ -148,5 +148,40 @@
             "$0"
         ],
         "description": "Add new field of type 'related'"
+    },
+    "openerp_field_function": {
+        "prefix": "offunc",
+        "body": [
+            "'${1:new_field}': fields.function(${2:fnct}, string='${3:label}', type='${4:type}'),",
+            "$0"
+        ],
+        "description": "Add new field of type 'function'"
+    },
+    "openerp_fnct": {
+        "prefix": "ofnct",
+        "body": [
+            "def ${1:fnct}(self, cr, uid, ids, f_name, arg, context):",
+            "\t$0",
+            ""
+        ],
+        "description": "Create new OpenERP function"
+    },
+    "openerp_fnct_inv": {
+        "prefix": "ofncti",
+        "body": [
+            "def ${1:fnct_inv}(self, cr, uid, ids, f_name, f_value, arg, context):",
+            "\t$0",
+            ""
+        ],
+        "description": "Create new OpenERP inv function"
+    },
+    "openerp_fnct_search": {
+        "prefix": "ofncts",
+        "body": [
+            "def ${1:fnct_search}(self, cr, uid, obj, name, args):",
+            "\t$0",
+            ""
+        ],
+        "description": "Create new OpenERP search function"
     }
 }

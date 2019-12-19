@@ -1,3 +1,7 @@
+## 1.1.0
++ Python: Added function code snippets
++ Other: Default manifest license changed to GPL-3 (OpenERP doesn't recognize MIT)
+
 ## 1.0.1
 + Python: Code snippets slightly improved
 + XML: Fix of some bugs and a new code snippet

@@ -2,7 +2,7 @@
   "name": "openerp-code-snippets",
   "displayName": "OpenERP Code Snippets",
   "description": "Snippets for developing OpenERP modules with Python and XML",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "license": "MIT",
   "publisher": "TheDavidDelta",
   "engines": {

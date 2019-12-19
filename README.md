@@ -12,24 +12,28 @@
 
 ## 🐍 Python Snippets
 
-| Snippet   | Description                       |
-|-----------|-----------------------------------|
-| `oman`    | Create OpenERP manifest           |
-| `oimp`    | Import OpenERP dependencies       |
-| `omod`    | Create new OpenERP model          |
-| `ofbin`   | Add new field of type 'binary'    |
-| `ofbool`  | Add new field of type 'boolean'   |
-| `ofchar`  | Add new field of type 'char'      |
-| `ofdate`  | Add new field of type 'date'      |
-| `oftime`  | Add new field of type 'datetime'  |
-| `offloat` | Add new field of type 'float'     |
-| `ofint`   | Add new field of type 'integer'   |
-| `oftext`  | Add new field of type 'text'      |
-| `ofsel`   | Add new field of type 'selection' |
-| `ofm2o`   | Add new field of type 'many2one'  |
-| `ofo2m`   | Add new field of type 'one2many'  |
-| `ofm2m`   | Add new field of type 'many2many' |
-| `ofrel`   | Add new field of type 'related'   |
+| Snippet   | Description                        |
+|-----------|------------------------------------|
+| `oman`    | Create OpenERP manifest            |
+| `oimp`    | Import OpenERP dependencies        |
+| `omod`    | Create new OpenERP model           |
+| `ofbin`   | Add new field of type 'binary'     |
+| `ofbool`  | Add new field of type 'boolean'    |
+| `ofchar`  | Add new field of type 'char'       |
+| `ofdate`  | Add new field of type 'date'       |
+| `oftime`  | Add new field of type 'datetime'   |
+| `offloat` | Add new field of type 'float'      |
+| `ofint`   | Add new field of type 'integer'    |
+| `oftext`  | Add new field of type 'text'       |
+| `ofsel`   | Add new field of type 'selection'  |
+| `ofm2o`   | Add new field of type 'many2one'   |
+| `ofo2m`   | Add new field of type 'one2many'   |
+| `ofm2m`   | Add new field of type 'many2many'  |
+| `ofrel`   | Add new field of type 'related'    |
+| `offunc`  | Add new field of type 'function'   |
+| `ofnct`   | Create new OpenERP function        |
+| `ofncti`  | Create new OpenERP inv function    |
+| `ofncts`  | Create new OpenERP search function |
 
 
 ## 🗃️ XML Snippets
