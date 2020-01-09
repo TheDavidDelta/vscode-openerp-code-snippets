@@ -1,3 +1,7 @@
+## 1.1.1
++ Python: Improved function code snippets
++ XML: Added generic view snippet & form-fields organizers
+
 ## 1.1.0
 + Python: Added function code snippets
 + Other: Default manifest license changed to GPL-3 (OpenERP doesn't recognize MIT)

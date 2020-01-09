@@ -12,28 +12,29 @@
 
 ## 🐍 Python Snippets
 
-| Snippet   | Description                        |
-|-----------|------------------------------------|
-| `oman`    | Create OpenERP manifest            |
-| `oimp`    | Import OpenERP dependencies        |
-| `omod`    | Create new OpenERP model           |
-| `ofbin`   | Add new field of type 'binary'     |
-| `ofbool`  | Add new field of type 'boolean'    |
-| `ofchar`  | Add new field of type 'char'       |
-| `ofdate`  | Add new field of type 'date'       |
-| `oftime`  | Add new field of type 'datetime'   |
-| `offloat` | Add new field of type 'float'      |
-| `ofint`   | Add new field of type 'integer'    |
-| `oftext`  | Add new field of type 'text'       |
-| `ofsel`   | Add new field of type 'selection'  |
-| `ofm2o`   | Add new field of type 'many2one'   |
-| `ofo2m`   | Add new field of type 'one2many'   |
-| `ofm2m`   | Add new field of type 'many2many'  |
-| `ofrel`   | Add new field of type 'related'    |
-| `offunc`  | Add new field of type 'function'   |
-| `ofnct`   | Create new OpenERP function        |
-| `ofncti`  | Create new OpenERP inv function    |
-| `ofncts`  | Create new OpenERP search function |
+| Snippet   | Description                            |
+|-----------|----------------------------------------|
+| `oman`    | Create OpenERP manifest                |
+| `oimp`    | Import OpenERP dependencies            |
+| `omod`    | Create new OpenERP model               |
+| `ofbin`   | Add new field of type 'binary'         |
+| `ofbool`  | Add new field of type 'boolean'        |
+| `ofchar`  | Add new field of type 'char'           |
+| `ofdate`  | Add new field of type 'date'           |
+| `oftime`  | Add new field of type 'datetime'       |
+| `offloat` | Add new field of type 'float'          |
+| `ofint`   | Add new field of type 'integer'        |
+| `oftext`  | Add new field of type 'text'           |
+| `ofsel`   | Add new field of type 'selection'      |
+| `ofm2o`   | Add new field of type 'many2one'       |
+| `ofo2m`   | Add new field of type 'one2many'       |
+| `ofm2m`   | Add new field of type 'many2many'      |
+| `ofrel`   | Add new field of type 'related'        |
+| `offunc`  | Add new field of type 'function'       |
+| `ofnct`   | Create new OpenERP function            |
+| `ofnctc`  | Create new OpenERP constraint function |
+| `ofncti`  | Create new OpenERP inv function        |
+| `ofncts`  | Create new OpenERP search function     |
 
 
 ## 🗃️ XML Snippets
@@ -41,14 +42,17 @@
 | Snippet     | Description                           |
 |-------------|---------------------------------------|
 | `odata`     | Create OpenERP initial structure      |
-| `oform`     | Create new OpenERP form view          |
-| `otree`     | Create new OpenERP tree view          |
+| `oview`     | Create new OpenERP view               |
 | `oact`      | Create new OpenERP action             |
 | `omenur`    | Create new OpenERP root menu          |
 | `omenui`    | Create new OpenERP menu item          |
 | `ofield`    | Create new OpenERP field              |
 | `ofieldse`  | Create new OpenERP field with select  |
 | `ofieldrel` | Create new OpenERP field with colspan |
+| `ogroup`    | Create new OpenERP fields group       |
+| `onoteb`    | Create new OpenERP notebook           |
+| `opage`     | Create new OpenERP notebook page      |
+| `osep`      | Create new OpenERP separator          |
 | `omod`      | Create new OpenERP full model         |
 | `ofull`     | Create OpenERP full XML structure     |
 

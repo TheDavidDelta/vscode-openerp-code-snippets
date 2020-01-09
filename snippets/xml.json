@@ -1,35 +1,19 @@
 {
-    "openerp_form": {
-        "prefix": "oform",
+    "openerp_view": {
+        "prefix": "oview",
         "body": [
-            "<record id=\"view_${1:prefix}_${2:package}_${3:class}_form\" model=\"ir.ui.view\">",
-            "\t<field name=\"name\">$1.$2.$3.view.form</field>",
+            "<record id=\"view_${1:prefix}_${2:package}_${3:class}_${4:view}\" model=\"ir.ui.view\">",
+            "\t<field name=\"name\">$1.$2.$3.view.$4</field>",
             "\t<field name=\"model\">$1.$2.$3</field>",
-            "\t<field name=\"type\">form</field>",
+            "\t<field name=\"type\">$4</field>",
             "\t<field name=\"arch\" type=\"xml\">",
-            "\t\t<form string=\"$1.$2.$3\">",
+            "\t\t<$4 string=\"$1.$2.$3\">",
             "\t\t\t$0",
-            "\t\t</form>",
+            "\t\t</$4>",
             "\t</field>",
             "</record>\n"
         ],
-        "description": "Create new OpenERP form view"
-    },
-    "openerp_tree": {
-        "prefix": "otree",
-        "body": [
-            "<record id=\"view_${1:prefix}_${2:package}_${3:class}_tree\" model=\"ir.ui.view\">",
-            "\t<field name=\"name\">$1.$2.$3.view.tree</field>",
-            "\t<field name=\"model\">$1.$2.$3</field>",
-            "\t<field name=\"type\">tree</field>",
-            "\t<field name=\"arch\" type=\"xml\">",
-            "\t\t<tree string=\"$1.$2.$3\">",
-            "\t\t\t$0",
-            "\t\t</tree>",
-            "\t</field>",
-            "</record>\n"
-        ],
-        "description": "Create new OpenERP tree view"
+        "description": "Create new OpenERP view"
     },
     "openerp_action": {
         "prefix": "oact",
@@ -71,7 +55,7 @@
     "openerp_search_field": {
         "prefix": "ofieldse",
         "body": [
-            "<field name=\"$1\" select=\"${2:1}\"/>",
+            "<field name=\"$1\" select=\"1\"/>",
             "$0"
         ],
         "description": "Create new OpenERP field with select"
@@ -83,6 +67,41 @@
             "$0"
         ],
         "description": "Create new OpenERP field with colspan"
+    },
+    "openerp_group": {
+        "prefix": "ogroup",
+        "body": [
+            "<group col=\"${1:2}\" colspan=\"${2:2}\">",
+            "\t$0",
+            "</group>"
+        ],
+        "description": "Create new OpenERP fields group"
+    },
+    "openerp_notebook": {
+        "prefix": "onoteb",
+        "body": [
+            "<notebook colspan=\"${1:4}\">",
+            "\t$0",
+            "</notebook>"
+        ],
+        "description": "Create new OpenERP notebook"
+    },
+    "openerp_page": {
+        "prefix": "opage",
+        "body": [
+            "<page string=\"${1:title}\">",
+            "\t$0",
+            "</page>"
+        ],
+        "description": "Create new OpenERP notebook page"
+    },
+    "openerp_separator": {
+        "prefix": "osep",
+        "body": [
+            "<separator string=\"${1:title}\" colspan=\"${2:4}\"/>",
+            "$0"
+        ],
+        "description": "Create new OpenERP separator"
     },
     "openerp_data": {
         "prefix": "odata",

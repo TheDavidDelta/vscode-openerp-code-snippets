@@ -161,10 +161,23 @@
         "prefix": "ofnct",
         "body": [
             "def ${1:fnct}(self, cr, uid, ids, f_name, arg, context):",
-            "\t$0",
+            "\tres = {}",
+            "\tfor row in self.browse(cr, uid, ids, context):",
+            "\t\t$0",
+            "\treturn res",
             ""
         ],
         "description": "Create new OpenERP function"
+    },
+    "openerp_fnct_cons": {
+        "prefix": "ofnctc",
+        "body": [
+            "def ${1:fnct}(self, cr, uid, ids, context=None):",
+            "\tfor val in self.read(cr, uid, ids, ['${2:field}'], context):",
+            "\t\t$0",
+            ""
+        ],
+        "description": "Create new OpenERP constraint function"
     },
     "openerp_fnct_inv": {
         "prefix": "ofncti",
