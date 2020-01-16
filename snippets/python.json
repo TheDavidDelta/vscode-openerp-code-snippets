@@ -169,6 +169,24 @@
         ],
         "description": "Create new OpenERP function"
     },
+    "openerp_fnct_onch": {
+        "prefix": "ofncto",
+        "body": [
+            "def ${1:fnct}(self, cr, uid, ids, ${2:field1}, ${3:field2}, arg=None, context=None):",
+            "\treturn { 'value': { '${4:chField}': $2 + $3 } }",
+            ""
+        ],
+        "description": "Create new OpenERP onchange function"
+    },
+    "openerp_fnct_btn": {
+        "prefix": "ofnctb",
+        "body": [
+            "def ${1:fnct}(self, cr, uid, ids, context=None):",
+            "\tself.write(cr, uid, ids, { '${2:field}': ${3:value} })",
+            ""
+        ],
+        "description": "Create new OpenERP button function"
+    },
     "openerp_fnct_cons": {
         "prefix": "ofnctc",
         "body": [

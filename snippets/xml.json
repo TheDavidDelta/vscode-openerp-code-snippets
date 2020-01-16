@@ -68,6 +68,14 @@
         ],
         "description": "Create new OpenERP field with colspan"
     },
+    "openerp_button_field": {
+        "prefix": "obutton",
+        "body": [
+            "<button name=\"$1\" string=\"$2\" type=\"${3:object}\"/>",
+            "$0"
+        ],
+        "description": "Create new OpenERP button field"
+    },
     "openerp_group": {
         "prefix": "ogroup",
         "body": [

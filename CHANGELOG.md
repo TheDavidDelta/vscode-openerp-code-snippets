@@ -1,3 +1,7 @@
+## 1.1.2
++ Python: Added on_change & button fncts snippets
++ XML: Added form button field snippet
+
 ## 1.1.1
 + Python: Improved function code snippets
 + XML: Added generic view snippet & form-fields organizers

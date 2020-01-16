@@ -32,6 +32,8 @@
 | `ofrel`   | Add new field of type 'related'        |
 | `offunc`  | Add new field of type 'function'       |
 | `ofnct`   | Create new OpenERP function            |
+| `ofncto`  | Create new OpenERP onchange function   |
+| `ofnctb`  | Create new OpenERP button function     |
 | `ofnctc`  | Create new OpenERP constraint function |
 | `ofncti`  | Create new OpenERP inv function        |
 | `ofncts`  | Create new OpenERP search function     |
@@ -49,6 +51,7 @@
 | `ofield`    | Create new OpenERP field              |
 | `ofieldse`  | Create new OpenERP field with select  |
 | `ofieldrel` | Create new OpenERP field with colspan |
+| `obutton`   | Create new OpenERP button field       |
 | `ogroup`    | Create new OpenERP fields group       |
 | `onoteb`    | Create new OpenERP notebook           |
 | `opage`     | Create new OpenERP notebook page      |
