@@ -1,3 +1,7 @@
+## 1.1.3
++ Python: Fix of small bug on float snippet
++ XML: Added view inheritance field
+
 ## 1.1.2
 + Python: Added on_change & button fncts snippets
 + XML: Added form button field snippet

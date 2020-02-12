@@ -56,6 +56,7 @@
 | `onoteb`    | Create new OpenERP notebook           |
 | `opage`     | Create new OpenERP notebook page      |
 | `osep`      | Create new OpenERP separator          |
+| `oinh`      | Create new OpenERP inherit field      |
 | `omod`      | Create new OpenERP full model         |
 | `ofull`     | Create OpenERP full XML structure     |
 

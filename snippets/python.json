@@ -88,7 +88,7 @@
     "openerp_field_float": {
         "prefix": "offloat",
         "body": [
-            "'${1:new_field}': fields.float('${2:label}', digits=(${3:12}, ${4:2}),",
+            "'${1:new_field}': fields.float('${2:label}', digits=(${3:12}, ${4:2})),",
             "$0"
         ],
         "description": "Add new field of type 'float'"

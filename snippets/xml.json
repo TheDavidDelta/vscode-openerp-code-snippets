@@ -111,6 +111,13 @@
         ],
         "description": "Create new OpenERP separator"
     },
+    "openerp_view_inherit_field": {
+        "prefix": "oinh",
+        "body": [
+            "<field name=\"inherit_id\" ref=\"${1:parent_module}.view_$1_${2:class}_${3:view}\"/>$0"
+        ],
+        "description": "Create new OpenERP inherit field"
+    },
     "openerp_data": {
         "prefix": "odata",
         "body": [
